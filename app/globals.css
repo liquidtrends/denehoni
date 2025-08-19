@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-neutral-900 antialiased;
+  }
+  .font-varela {
+    font-family: var(--font-varela), sans-serif;
+  }
+}
+
+/* Reusable component classes */
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-xl px-4 py-2 font-medium shadow-sm hover:shadow transition border border-neutral-200;
+  }
+  .btn-primary {
+    @apply bg-neutral-900 text-white hover:bg-neutral-800;
+  }
+  .card {
+    @apply rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm;
+  }
+}
+
+/* ===== Animated gradient backdrop ===== */
+@keyframes hero-gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-animated-gradient {
+  /* Brand-forward gradient: red → orange → teal */
+  background-image: linear-gradient(
+    120deg,
+    #BD2F2B 0%,
+    #F16A2C 50%,
+    #1E9FA3 100%
+  );
+  background-size: 200% 200%;
+  animation: hero-gradient-shift 16s ease-in-out infinite;
+  /* soft overlay to keep text readable */
+
+}
+
+/* Motion safety */
+@media (prefers-reduced-motion: reduce) {
+  .hero-animated-gradient {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}
+
+/* Optional: subtle grain for texture (tiny data-uri) */
+.hero-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
+  background-size: 140px 140px;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+@layer utilities {
+  .text-inset {
+    color: #111827; /* neutral-900 */
+    text-shadow:
+      1px 1px 2px rgba(255, 255, 255, 0.6),   /* top-left highlight */
+     -1px -1px 2px rgba(0, 0, 0, 0.4);        /* bottom-right shadow */
+  }
+}
+
+@layer utilities {
+  .bg-paper {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/‌filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+}
+
+@layer utilities {
+  .bg-floral-outline {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='rgba(17,24,39,0.08)' stroke-width='1.25'%3E%3Ccircle cx='32' cy='14' r='8'/%3E%3Ccircle cx='48' cy='28' r='8'/%3E%3Ccircle cx='16' cy='28' r='8'/%3E%3Ccircle cx='40' cy='46' r='8'/%3E%3Ccircle cx='24' cy='50' r='8'/%3E%3C/‌g%3E%3C/svg%3E");
+    background-size: 180px 180px;
+  }
+}
+
