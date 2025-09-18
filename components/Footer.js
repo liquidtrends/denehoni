@@ -29,8 +29,6 @@ export default function Footer() {
               Follow us on social media or reach out for collaborations.
             </p>
             <div className="mt-3 flex gap-3">
-              <a href={site.links.github} target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
-              <a href={site.links.twitter} target="_blank" rel="noreferrer" className="hover:underline">Twitter</a>
             </div>
           </div>
         </Container>
@@ -45,8 +43,6 @@ export default function Footer() {
           <div className="flex items-center gap-4 text-sm">
             <Link className="hover:underline" href="/privacy">Privacy</Link>
             <Link className="hover:underline" href="/terms">Terms</Link>
-            <a className="hover:underline" href={site.links.github} target="_blank" rel="noreferrer">GitHub</a>
-            <a className="hover:underline" href={site.links.twitter} target="_blank" rel="noreferrer">Twitter</a>
           </div>
         </Container>
       </footer>

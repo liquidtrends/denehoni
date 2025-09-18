@@ -1,25 +1,41 @@
-import Image from "next/image";
+"use client";
+import { useEffect, useRef } from "react";
 
-export default function HeroBackground() {
+export default function HeroBackground({ range = 400 }) {
+  // 'range' = how many pixels of scroll it takes to reach full day (progress=1)
+
+  const rafRef = useRef(0);
+
+  useEffect(() => {
+    const root = document.documentElement;
+
+    const clamp01 = (v) => Math.max(0, Math.min(1, v));
+
+    const onScroll = () => {
+      // compute progress based on page scroll
+      const y = window.scrollY || 0;
+      const p = clamp01(y / range);
+
+      // write to CSS vars once per frame
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        root.style.setProperty("--sun-progress", String(p));
+        root.style.setProperty("--day-opacity", String(p));
+      });
+    };
+
+    onScroll(); // initial
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [range]);
+
   return (
-    <div className="pointer-events-none absolute inset-0">
-      {/* Animated gradient */}
-      <div className="hero-animated-gradient absolute inset-0 z-0" />
-
-      {/* Optional grain texture */}
-      <div className="hero-grain absolute inset-0 z-10 opacity-70" />
-
-      {/* Bottom-left floral (responsive width) */}
-      <div className="absolute -bottom-20 left-0 z-30 w-[300px] sm:w-[500px] md:w-[650px] lg:w-[800px]">
-        <Image
-          src="/flowers-left.png"
-          alt="Cree/Dene floral design (placeholder)"
-          width={800}
-          height={800}
-          className="w-full h-auto"
-          priority
-        />
-      </div>
+    <div className="sunrise-sky">
+      <div className="sunrise-sun" />
+      <div className="sunrise-horizon-line" />
     </div>
   );
 }

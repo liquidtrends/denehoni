@@ -9,8 +9,8 @@ export default function Page() {
         <div className="container mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
           {/* Visual */}
           <div className="relative">
-            <div className="aspect-square overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
-              <img src="https://picsum.photos/500" alt="" className="h-full w-full object-cover" />
+            <div className="aspect-square overflow-hidden">
+              <img src="4flower.png" alt="" className="h-full w-full object-cover" />
             </div>
           </div>
 
