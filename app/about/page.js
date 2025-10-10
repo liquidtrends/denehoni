@@ -203,7 +203,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="font-varela text-xl md:text-2xl">Daena Crosby</h3>
-                  <p className="text-neutral-500">Co-Founder</p>
+                  <p className="text-neutral-500">Co-Founder - Director of Storytelling</p>
                 </div>
               </div>
               <p className="mt-4 text-neutral-700 leading-relaxed">
