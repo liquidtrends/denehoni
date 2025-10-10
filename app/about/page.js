@@ -181,7 +181,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="font-varela text-xl md:text-2xl">Ryan Janvier</h3>
-                  <p className="text-neutral-500">Founder &amp; Creative Director</p>
+                  <p className="text-neutral-500">Founder - Creative Director</p>
                 </div>
               </div>
               <p className="mt-4 text-neutral-700 leading-relaxed">
