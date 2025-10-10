@@ -1,20 +1,167 @@
-import ContactForm from "@/components/ContactForm";
-
+// app/contact/page.js
 export const metadata = {
   title: "Contact",
-  description: "Get in touch to start your project."
+  description:
+    "Get in touch with Dene Honi — Let’s tell your story together.",
 };
 
 export default function ContactPage() {
   return (
-    <section className="py-16">
-      <div className="container max-w-2xl">
-        <h1 className="text-3xl font-bold">Contact</h1>
-        <p className="mt-2 text-neutral-600">
-          Tell us about your project and we’ll reply within 1–2 business days.
-        </p>
-        <ContactForm />
-      </div>
-    </section>
+    <article className="bg-white">
+      {/* ===== Header (same style as Portfolio) ===== */}
+      <section className="bg-gradient-to-t from-sky-950 to-indigo-950 text-white">
+        <div className="container py-14 md:py-20">
+          <h1 className="text-center font-varela text-4xl md:text-6xl">Contact</h1>
+          <p className="mx-auto mt-6 max-w-3xl text-center text-lg text-white">
+            Let’s tell your story — together.
+          </p>
+        </div>
+      </section>
+
+      {/* ===== Content ===== */}
+      <section>
+        <div className="container py-12 md:py-16">
+          <div className="grid gap-10 md:grid-cols-2">
+            {/* Left: Info */}
+            <div className="space-y-6">
+              <p className="text-neutral-700 text-lg leading-relaxed">
+                Whether you're planning a new initiative, refreshing your brand, or
+                need technical or visual support, we’d love to connect!
+              </p>
+
+              <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
+                <dl className="space-y-4">
+                  <div>
+                    <dt className="text-sm uppercase tracking-wide text-neutral-500">
+                      Email
+                    </dt>
+                    <dd className="mt-1 text-lg">
+                      <a
+                        href="mailto:info@denehoni.ca"
+                        className="underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange"
+                      >
+                        info@denehoni.ca
+                      </a>
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt className="text-sm uppercase tracking-wide text-neutral-500">
+                      Phone
+                    </dt>
+                    <dd className="mt-1 text-lg">
+                      <span className="text-neutral-800">780-709-8847</span>
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt className="text-sm uppercase tracking-wide text-neutral-500">
+                      Location
+                    </dt>
+                    <dd className="mt-1 text-lg text-neutral-800">
+                      Based in Treaty 6, Amiskwacîwâskahikan (Edmonton, Alberta).<br />
+                      Serving communities across Turtle Island.
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+
+              {/* Optional: direct email CTA */}
+              <a
+                href="mailto:info@denehoni.ca?subject=New%20Project%20Inquiry"
+                className="inline-block rounded-2xl bg-gradient-to-r from-brand-red to-brand-orange px-6 py-3 font-varela text-white shadow transition hover:opacity-90"
+              >
+                Email Us
+              </a>
+            </div>
+
+            {/* Right: Form */}
+            <div className="rounded-2xl border border-neutral-200 p-[1px] bg-gradient-to-r from-brand-red/40 to-brand-orange/40">
+              <div className="rounded-2xl bg-white p-6 md:p-8">
+                <h2 className="font-varela text-2xl md:text-3xl">Contact Form</h2>
+                <p className="mt-2 text-neutral-600">
+                  We’ll get back to you as soon as possible.
+                </p>
+
+                {/* 
+                  ACTION NOTE:
+                  - Replace action with your handler (e.g., /api/contact) or a form service.
+                  - For now, it’s just a placeholder.
+                */}
+                <form action="/api/contact" method="post" className="mt-6 space-y-5">
+                  <div>
+                    <label htmlFor="name" className="block text-sm text-neutral-700">
+                      Name <span className="text-brand-red">*</span>
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      autoComplete="name"
+                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="org" className="block text-sm text-neutral-700">
+                      Organization <span className="text-neutral-400">(optional)</span>
+                    </label>
+                    <input
+                      id="org"
+                      name="organization"
+                      type="text"
+                      autoComplete="organization"
+                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="email" className="block text-sm text-neutral-700">
+                      Email <span className="text-brand-red">*</span>
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      autoComplete="email"
+                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="message" className="block text-sm text-neutral-700">
+                      What would you like to work on? <span className="text-brand-red">*</span>
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={5}
+                      required
+                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
+                    />
+                  </div>
+
+                  <div className="pt-2">
+                    <button
+                      type="submit"
+                      className="w-full rounded-2xl bg-gradient-to-r from-brand-red to-brand-orange px-6 py-3 font-varela text-white shadow transition hover:opacity-90"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+
+                {/* small privacy note */}
+                <p className="mt-4 text-xs text-neutral-500">
+                  By submitting this form, you consent to us contacting you about your inquiry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
   );
 }

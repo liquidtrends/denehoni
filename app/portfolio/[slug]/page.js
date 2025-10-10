@@ -59,19 +59,6 @@ export default function CaseStudyPage({ params }) {
         </ol>
       </section>
 
-      {study.gallery?.length > 0 && (
-        <section className="container pb-12 md:pb-16">
-          <h2 className="text-2xl font-semibold">Gallery</h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {study.gallery.map((src) => (
-              <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-xl border border-neutral-200">
-                <Image src={src} alt="" fill className="object-cover" />
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
       {study.testimonial && (
         <section className="container pb-20">
           <figure className="rounded-xl border border-neutral-200 bg-neutral-50 p-6">

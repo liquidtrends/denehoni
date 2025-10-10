@@ -33,23 +33,6 @@ export default function Page() {
           </div>
         </div>
         </section>
-        <section className="bg-gradient-to-r from-teal-500 to-brand-orange py-16">
-          <div className="container mx-auto max-w-5xl px-6 text-center text-white">
-            <h2 className="mb-6 font-varela text-3xl md:text-4xl">
-              Let’s build something meaningful together
-            </h2>
-            <p className="mb-8 text-lg md:text-xl opacity-90">
-              Whether it’s web, design, or strategy, we’re here to help bring your
-              vision to life with respect, creativity, and care.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block rounded-xl bg-white px-8 py-4 font-varela text-lg font-semibold text-brand-red shadow-lg transition hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-teal-500"
-            >
-              Start Your Project
-            </a>
-          </div>
-        </section>
     </>
   );
 }

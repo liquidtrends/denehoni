@@ -11,7 +11,6 @@ const varela = Varela_Round({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-varela",
-  display: "swap",
 });
 
 export const metadata = {

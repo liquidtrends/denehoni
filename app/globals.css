@@ -13,6 +13,9 @@
   .font-varela {
     font-family: var(--font-varela), sans-serif;
   }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-varela;
+  }
 }
 
 /* Reusable component classes */
@@ -150,3 +153,5 @@
     background-size: 180px 180px;
   }
 }
+
+

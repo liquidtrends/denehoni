@@ -24,6 +24,9 @@ module.exports = {
         700: "#374151",
         900: "#111827"
       },
+      fontFamily: {
+        varela: ["var(--font-varela)", "sans-serif"],
+      },
     },
       container: {
         center: true,
