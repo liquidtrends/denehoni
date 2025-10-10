@@ -12,7 +12,7 @@ export default function ContactPage() {
       <section className="bg-gradient-to-t from-sky-950 to-indigo-950 text-white">
         <div className="container py-14 md:py-20">
           <h1 className="text-center font-varela text-4xl md:text-6xl">Contact</h1>
-          <p className="mx-auto mt-6 max-w-3xl text-center text-lg text-white">
+          <p className="mx-auto mt-6 max-w-3xl font-varela text-center text-xl text-white">
             Let’s tell your story — together.
           </p>
         </div>
