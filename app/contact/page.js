@@ -88,69 +88,59 @@ export default function ContactPage() {
                   - Replace action with your handler (e.g., /api/contact) or a form service.
                   - For now, it’s just a placeholder.
                 */}
-                <form action="/api/contact" method="post" className="mt-6 space-y-5">
-                  <div>
-                    <label htmlFor="name" className="block text-sm text-neutral-700">
-                      Name <span className="text-brand-red">*</span>
-                    </label>
+                <form
+                  action="https://formspree.io/f/myznndvd"
+                  method="POST"
+                  className="space-y-5 max-w-lg mx-auto"
+                >
+                  <label className="block">
+                    <span className="text-sm">Name*</span>
                     <input
-                      id="name"
+                      type="text"
                       name="name"
-                      type="text"
                       required
-                      autoComplete="name"
-                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
+                      className="mt-1 w-full rounded-xl border border-brand-orange bg-white/10 px-3 py-2 text-black placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-brand-orange"
                     />
-                  </div>
+                  </label>
 
-                  <div>
-                    <label htmlFor="org" className="block text-sm text-neutral-700">
-                      Organization <span className="text-neutral-400">(optional)</span>
-                    </label>
+                  <label className="block">
+                    <span className="text-sm">Organization (optional)</span>
                     <input
-                      id="org"
+                      type="text"
                       name="organization"
-                      type="text"
-                      autoComplete="organization"
-                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
+                      className="mt-1 w-full rounded-xl border border-brand-orange bg-white/10 px-3 py-2 text-black placeholder-white/50"
                     />
-                  </div>
+                  </label>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm text-neutral-700">
-                      Email <span className="text-brand-red">*</span>
-                    </label>
+                  <label className="block">
+                    <span className="text-sm">Email*</span>
                     <input
-                      id="email"
-                      name="email"
                       type="email"
+                      name="email"
                       required
-                      autoComplete="email"
-                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
+                      className="mt-1 w-full rounded-xl border border-brand-orange bg-white/10 px-3 py-2 text-black placeholder-white/50"
                     />
-                  </div>
+                  </label>
 
-                  <div>
-                    <label htmlFor="message" className="block text-sm text-neutral-700">
-                      What would you like to work on? <span className="text-brand-red">*</span>
-                    </label>
+                  <label className="block">
+                    <span className="text-sm">What would you like to work on?*</span>
                     <textarea
-                      id="message"
                       name="message"
                       rows={5}
                       required
-                      className="mt-2 w-full rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-800 outline-none ring-brand-orange/30 focus:ring-4"
-                    />
-                  </div>
+                      className="mt-1 w-full rounded-xl border border-brand-orange bg-white/10 px-3 py-2 text-black placeholder-white/50"
+                    ></textarea>
+                  </label>
 
-                  <div className="pt-2">
-                    <button
-                      type="submit"
-                      className="w-full rounded-2xl bg-gradient-to-r from-brand-red to-brand-orange px-6 py-3 font-varela text-white shadow transition hover:opacity-90"
-                    >
-                      Submit
-                    </button>
-                  </div>
+                  {/* hidden spam trap */}
+                  <input type="text" name="_gotcha" className="hidden" />
+
+                  <button
+                    type="submit"
+                    className="rounded-2xl bg-gradient-to-r from-brand-red to-brand-orange px-6 py-3 text-white font-semibold hover:scale-105 transition"
+                  >
+                    Send Message
+                  </button>
                 </form>
 
                 {/* small privacy note */}

@@ -17,7 +17,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex items-center justify-center gap-3">
             <a
-              href="/contact"
+              href="/portfolio"
               className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-brand-red px-5 py-3 font-medium text-white shadow-lg hover:bg-brand-orange focus:outline-none focus:ring-2 focus:ring-white/60"
             >
               See Our Work
