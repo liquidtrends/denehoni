@@ -50,13 +50,9 @@ export default function Footer() {
       
       {/* Footer Section */}
       <footer className="bg-black">
-        <Container className="flex flex-col items-center justify-between gap-4 py-8 text-center md:flex-row md:text-left">
+        <Container className="flex flex-col items-center justify-between gap-4 py-8 text-center md:flex-row md:text-center">
           <div className="text-sm text-neutral-100">
             © {new Date().getFullYear()} {site.name}. All rights reserved.
-          </div>
-          <div className="flex items-center gap-4 text-sm">
-            <Link className="hover:underline" href="/privacy">Privacy</Link>
-            <Link className="hover:underline" href="/terms">Terms</Link>
           </div>
         </Container>
       </footer>
