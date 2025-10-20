@@ -42,6 +42,7 @@ export default function ContactPage() {
                       >
                         daena@denehoni.ca
                       </a>
+                      <br />
                       <a
                         href="mailto:ryan@denehoni.ca"
                         className="underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange"
