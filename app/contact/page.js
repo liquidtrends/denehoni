@@ -37,17 +37,17 @@ export default function ContactPage() {
                     </dt>
                     <dd className="mt-1 text-lg">
                       <a
-                        href="mailto:daena@denehoni.ca"
+                        href="mailto:daena@denehoni.com"
                         className="underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange"
                       >
-                        daena@denehoni.ca
+                        daena@denehoni.com
                       </a>
                       <br />
                       <a
-                        href="mailto:ryan@denehoni.ca"
+                        href="mailto:ryan@denehoni.com"
                         className="underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange"
                       >
-                        ryan@denehoni.ca
+                        ryan@denehoni.com
                       </a>
                     </dd>
                   </div>
