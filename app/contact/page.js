@@ -75,7 +75,7 @@ export default function ContactPage() {
 
               {/* Optional: direct email CTA */}
               <a
-                href="mailto:ryan@denehoni.com?subject=New%20Project%20Inquiry"
+                href="mailto:daena@denehoni.com?subject=New%20Project%20Inquiry"
                 className="inline-block rounded-2xl bg-gradient-to-r from-brand-red to-brand-orange px-6 py-3 font-varela text-white shadow transition hover:opacity-90"
               >
                 Email Us

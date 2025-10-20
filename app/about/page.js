@@ -33,20 +33,20 @@ export default function AboutPage() {
           <div className="grid gap-8 md:grid-cols-2 auto-rows-fr">
             {/* Vision */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
-              <div className="flex h-full flex-col rounded-2xl bg-neutral-950/70 p-8">
+              <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-8">
                 <h2 className="font-varela text-2xl md:text-3xl">Our Vision</h2>
                 <p className="mt-4 text-lg md:text-xl text-white/90 leading-relaxed">
-                  Indigenous stories shaping the future—for generations to come.
+                  Indigenous stories shaping the future — for generations to come.
                 </p>
               </div>
             </div>
 
             {/* Mission */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
-              <div className="flex h-full flex-col rounded-2xl bg-neutral-950/70 p-8">
+              <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-8">
                 <h2 className="font-varela text-2xl md:text-3xl">Our Mission</h2>
                 <p className="mt-4 text-lg md:text-xl text-white/90 leading-relaxed">
-                  We support Indigenous communities—and values-aligned partners—in
+                  We support Indigenous communities — and values-aligned partners — in
                   sharing truths and visions through digital storytelling that
                   blends technology, communications, and design rooted in Indigenous
                   knowledge.
@@ -65,7 +65,7 @@ export default function AboutPage() {
           </h2>
           <p className="mx-auto mt-6 max-w-4xl text-center text-lg md:text-xl text-neutral-700 leading-relaxed">
             Our work is guided by respect for community, cultural protocols, and
-            Indigenous ways of knowing. We don’t just deliver projects—together,
+            Indigenous ways of knowing. We don’t just deliver projects — together,
             we build trust, co-create vision, and make space for stories that need
             to be heard.
           </p>
@@ -91,7 +91,7 @@ export default function AboutPage() {
               },
               {
                 title: "Relationships",
-                text: "We prioritize long-term, trust-based partnerships over transactions—grounded in care and accountability.",
+                text: "We prioritize long - term, trust - based partnerships over transactions—grounded in care and accountability.",
               },
               {
                 title: "Listening",
@@ -105,7 +105,7 @@ export default function AboutPage() {
             ].map((val, i) => (
               <div
                 key={i}
-                className={`rounded-2xl border border-neutral-200 p-6 bg-gradient-to-t from-sky-950 to-indigo-950 text-white ${
+                className={`rounded-2xl border border-neutral-200 p-6 bg-gradient-to-t from-brand-red to-brand-orange text-white ${
                   val.fullWidth ? "md:col-span-2" : ""
                 }`}
               >
@@ -128,7 +128,7 @@ export default function AboutPage() {
               Dene Honi is the evolution of more than two decades of work under
               Liquid Trends Media, founded by Ryan Janvier of the Chipewyan
               Prairie Dene First Nation. As Founder and Creative Director, Ryan
-              brings a deep connection to culture, land, and community—and a
+              brings a deep connection to culture, land, and community — and a
               belief that technology can help preserve and share Indigenous
               knowledge and traditions.
             </p>
@@ -147,7 +147,7 @@ export default function AboutPage() {
             </p>
             <p>
               Our goal is to be a trusted partner in the change our communities
-              are leading—leveraging story and technology to increase reach,
+              are leading — leveraging story and technology to increase reach,
               amplify truth, and strengthen identity for generations to come.
             </p>
           </div>
@@ -215,8 +215,7 @@ export default function AboutPage() {
 
           <div className="prose prose-neutral prose-lg md:prose-xl mx-auto mt-8">
             <p>
-              We are often told that our partnership is an example of reconciliation in action. While we hold that with respect, to us, it is about something deeper: long-term relational work, shared responsibility, and showing up with consistency for the communities we care about.
-            </p>
+              We are often told that our partnership is an example of reconciliation in action. To us, that means: long-term relational work, shared responsibility, and showing up with consistency for the communities we care about.            </p>
             <p>
               We’ve learned to find a way forward – together – through listening, truth-telling, creativity, and a shared belief in the power of Indigenous stories to shape the future.
             </p>

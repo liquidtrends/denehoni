@@ -35,7 +35,7 @@ export default function ServicesPage() {
           <div className="grid gap-8 md:grid-cols-2 auto-rows-fr">
             {/* 1 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
-              <div className="flex h-full flex-col rounded-2xl bg-neutral-950/70 p-6">
+              <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">
                   Web Design &amp; Development
                 </h2>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
 
             {/* 2 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
-              <div className="flex h-full flex-col rounded-2xl bg-neutral-950/70 p-6">
+              <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">
                   Graphic Design &amp; Visual Storytelling
                 </h2>
@@ -64,7 +64,7 @@ export default function ServicesPage() {
 
             {/* 3 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
-              <div className="flex h-full flex-col rounded-2xl bg-neutral-950/70 p-6">
+              <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">
                   Communications Strategy
                 </h2>
@@ -79,7 +79,7 @@ export default function ServicesPage() {
 
             {/* 4 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
-              <div className="flex h-full flex-col rounded-2xl bg-neutral-950/70 p-6">
+              <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">
                   Strategic Planning with Visual Tools
                 </h2>

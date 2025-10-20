@@ -16,7 +16,7 @@ export default function Page() {
 
           {/* Copy */}
           <div>
-            <h2 className="mb-4 font-varela text-3xl md:text-5xl">Dene Honi means Stories for the People.</h2>
+            <h2 className="mb-4 font-varela text-3xl md:text-5xl">Dene Honi means Stories for the People</h2>
             <p className="mb-4 text-lg leading-relaxed">
               We’re an Indigenous-owned creative and strategic studio offering full-service, relationally grounded support in web development,
               graphic design, communications, and strategic planning.
