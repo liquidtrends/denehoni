@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom base styles */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -18,7 +17,6 @@
   }
 }
 
-/* Reusable component classes */
 @layer components {
   .btn {
     @apply inline-flex items-center gap-2 rounded-xl px-4 py-2 font-medium shadow-sm hover:shadow transition border border-neutral-200;
@@ -31,13 +29,11 @@
   }
 }
 
-/* --- Sunrise: dawn → day driven by CSS vars --- */
 :root {
-  --sun-progress: 0;    /* 0..1 set by JS */
-  --day-opacity: 0;     /* 0..1 set by JS */
+  --sun-progress: 0;
+  --day-opacity: 0;
 }
 
-/* Wrapper that holds both gradients */
 .sunrise-sky {
   position: absolute;
   inset: 0;
@@ -45,12 +41,10 @@
   z-index: -1;
 }
 
-/* Dawn layer (behind) */
 .sunrise-sky::before {
   content: "";
   position: absolute;
   inset: 0;
-  /* Pre-dawn → warm horizon; brand-tinted */
   background:
     radial-gradient(120% 70% at 50% 100%,
       rgba(241,106,44,0.22) 0%,
@@ -63,7 +57,6 @@
       #101521 100%);
 }
 
-/* Day layer (on top, its opacity is driven by --day-opacity) */
 .sunrise-sky::after {
   content: "";
   position: absolute;
@@ -82,7 +75,6 @@
   pointer-events: none;
 }
 
-/* Rising sun (position controlled by --sun-progress) */
 .sunrise-sun {
   position: absolute;
   left: 50%;
@@ -90,20 +82,17 @@
   width: 40vmin;
   height: 40vmin;
   border-radius: 50%;
-  /* warm sun with soft corona */
   background:
     radial-gradient(closest-side, #fff6e5 0%, #ffd8a8 55%),
     radial-gradient(closest-side, #F16A2C 0%, rgba(241,106,44,0.55) 40%, rgba(241,106,44,0) 75%);
   box-shadow:
     0 0 60px 20px rgba(241,106,44,0.35),
     0 0 120px 50px rgba(189,47,43,0.20);
-  /* Start below horizon; rise ~60vh as progress→1 */
   bottom: calc(-30vh + (60vh * var(--sun-progress)));
   filter: blur(0.5px);
   pointer-events: none;
 }
 
-/* Optional: a thin horizon line for realism */
 .sunrise-horizon-line {
   position: absolute;
   inset-inline: 0;
@@ -114,7 +103,6 @@
   pointer-events: none;
 }
 
-/* Motion safety */
 @media (prefers-reduced-motion: reduce) {
   .hero-animated-gradient {
     animation: none;
@@ -122,7 +110,6 @@
   }
 }
 
-/* Optional: subtle grain for texture (tiny data-uri) */
 .hero-grain {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
   background-size: 140px 140px;
@@ -132,26 +119,10 @@
 
 @layer utilities {
   .text-inset {
-    color: #111827; /* neutral-900 */
+    color: #111827;
     text-shadow:
-      1px 1px 2px rgba(255, 255, 255, 0.6),   /* top-left highlight */
-     -1px -1px 2px rgba(0, 0, 0, 0.4);        /* bottom-right shadow */
+      1px 1px 2px rgba(255, 255, 255, 0.6),
+     -1px -1px 2px rgba(0, 0, 0, 0.4);
   }
 }
-
-@layer utilities {
-  .bg-paper {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/‌filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
-    background-size: 160px 160px;
-  }
-}
-
-@layer utilities {
-  .bg-floral-outline {
-    background-image:
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='rgba(17,24,39,0.08)' stroke-width='1.25'%3E%3Ccircle cx='32' cy='14' r='8'/%3E%3Ccircle cx='48' cy='28' r='8'/%3E%3Ccircle cx='16' cy='28' r='8'/%3E%3Ccircle cx='40' cy='46' r='8'/%3E%3Ccircle cx='24' cy='50' r='8'/%3E%3C/‌g%3E%3C/svg%3E");
-    background-size: 180px 180px;
-  }
-}
-
 

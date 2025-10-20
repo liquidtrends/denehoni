@@ -10,7 +10,6 @@ export default function ContactForm() {
     const form = new FormData(e.currentTarget);
     const data = Object.fromEntries(form.entries());
 
-    // Replace with your API, Formspree, Resend, etc.
     console.log("Form data:", data);
 
     setStatus("Thanks! We’ll be in touch soon.");

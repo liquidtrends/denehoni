@@ -19,7 +19,6 @@ export default function Footer() {
           </Link>
         </div>
       </section>
-      {/* Pre-Footer Section */}
       <div className="bg-gradient-to-t from-black to-sky-950 text-white">
         <Container className="grid gap-8 py-12 md:grid-cols-3">
           <div>
@@ -48,7 +47,6 @@ export default function Footer() {
         </Container>
       </div>
       
-      {/* Footer Section */}
       <footer className="bg-black">
         <Container className="flex flex-col items-center justify-between gap-4 py-8 text-center md:flex-row md:text-center">
           <div className="text-sm text-neutral-100">

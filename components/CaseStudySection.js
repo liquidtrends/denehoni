@@ -8,7 +8,6 @@ export default function CaseStudySection({ study, index = 0 }) {
 
   return (
     <section className="relative">
-      {/* Full-bleed background */}
       {study?.theme?.bgMode === "image" ? (
         <div className="absolute inset-0 -z-10">
           <Image
@@ -24,14 +23,12 @@ export default function CaseStudySection({ study, index = 0 }) {
         <div className={`absolute inset-0 -z-10 ${study.theme.bgColor}`} />
       ) : null}
 
-      {/* Content container */}
       <div className={`container py-16 md:py-24 ${dark ? "text-white" : "text-neutral-900"}`}>
         <div
           className={`grid items-center gap-10 md:grid-cols-2 ${
             isEven ? "" : "md:[&>*:first-child]:order-2"
           }`}
         >
-          {/* Visual/media */}
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm backdrop-blur-sm">
             <div className="relative aspect-[16/10] w-full">
               <Image
@@ -43,7 +40,6 @@ export default function CaseStudySection({ study, index = 0 }) {
             </div>
           </div>
 
-          {/* Copy */}
           <div>
             <div className="inline-block bg-gradient-to-r bg-clip-text text-sm font-medium text-transparent opacity-90
                             from-brand-red to-brand-orange">
@@ -56,7 +52,6 @@ export default function CaseStudySection({ study, index = 0 }) {
               {study.summary}
             </p>
 
-            {/* Services */}
             {study.services?.length > 0 && (
               <ul className="mt-6 flex flex-wrap gap-2">
                 {study.services.map((s) => (
@@ -68,7 +63,6 @@ export default function CaseStudySection({ study, index = 0 }) {
               </ul>
             )}
 
-            {/* Outcomes / metrics */}
             {(study.outcomes?.length || study.metrics?.length) && (
               <div className="mt-6 grid gap-4 md:grid-cols-2">
                 {study.outcomes?.length > 0 && (
@@ -90,7 +84,6 @@ export default function CaseStudySection({ study, index = 0 }) {
               </div>
             )}
 
-            {/* Testimonial */}
             {study.testimonial && (
               <figure className={`mt-6 rounded-xl p-5 ${dark ? "bg-white/10" : "bg-neutral-50 border border-neutral-200"}`}>
                 <blockquote className="italic">
@@ -102,7 +95,6 @@ export default function CaseStudySection({ study, index = 0 }) {
               </figure>
             )}
 
-            {/* CTA */}
             {study.cta?.href && (
               <Link
                 href={study.cta.href}

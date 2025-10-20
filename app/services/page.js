@@ -8,17 +8,15 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <article className="bg-white">
-      {/* ONE continuous section: header + grid share the same background */}
+
       <section
         className="relative overflow-hidden bg-top bg-cover text-white"
         style={{
           backgroundImage: "url('/services-bg.jpg')",
         }}
       >
-        {/* brand gradient overlay for legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-sky-950/85 via-indigo-950/70 to-indigo-900/40" />
 
-        {/* Header copy */}
         <div className="relative container pt-16 pb-10 md:pt-24 md:pb-14 text-center">
           <h1 className="font-varela text-4xl md:text-6xl">Our Services</h1>
           <p className="font-varela mx-auto mt-6 max-w-3xl text-xl text-white/90">
@@ -29,11 +27,8 @@ export default function ServicesPage() {
           </p>
         </div>
 
-        {/* Services Grid (equal height) */}
         <div className="relative container pb-16 md:pb-24">
-          {/* 👇 add auto-rows-fr so every row's cells match height */}
           <div className="grid gap-8 md:grid-cols-2 auto-rows-fr">
-            {/* 1 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
               <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">
@@ -47,7 +42,6 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* 2 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
               <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">
@@ -62,7 +56,6 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* 3 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
               <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">
@@ -77,7 +70,6 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* 4 */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
               <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-6">
                 <h2 className="font-varela text-3xl text-white">

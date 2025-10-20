@@ -21,7 +21,6 @@ export default function Header() {
                 className="relative text-base font-semibold tracking-wide text-neutral-800 hover:text-brand-red transition-colors duration-300 group font-varela"
               >
                 {item.name}
-                {/* Fancy underline */}
                 <span className="absolute left-0 bottom-[-4px] h-[3px] w-0 bg-gradient-to-r from-brand-red to-brand-orange transition-all duration-300 group-hover:w-full"></span>
               </ActiveLink>
             ))}

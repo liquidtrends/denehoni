@@ -7,14 +7,12 @@ export default function Page() {
       <Hero />
       <section className="relative border-t-4 border-brand-red bg-brandNeutral-50 py-20">
         <div className="container mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
-          {/* Visual */}
           <div className="relative">
             <div className="aspect-square overflow-hidden">
               <img src="4flower.png" alt="" className="h-full w-full object-cover" />
             </div>
           </div>
 
-          {/* Copy */}
           <div>
             <h2 className="mb-4 font-varela text-3xl md:text-5xl">Dene Honi means Stories for the People</h2>
             <p className="mb-4 text-lg leading-relaxed">

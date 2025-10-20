@@ -18,7 +18,6 @@ export default function PortfolioPage() {
             "url('/services-bg.jpg')",
         }}
       >
-        {/* single gradient overlay USING your brand gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-sky-950/85 via-indigo-950/70 to-indigo-900/40" />
 
         <div className="relative container py-16 md:py-24 text-center">
@@ -44,9 +43,9 @@ export default function PortfolioPage() {
                 reverse ? "md:[&>div:first-child]:order-2 md:[&>div:last-child]:order-1" : ""
               }`}
             >
-              {/* IMAGES */}
+
               <div>
-                {/* Main */}
+
                 {mainImage && (
                   <div
                     className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-neutral-200 shadow"
@@ -65,7 +64,6 @@ export default function PortfolioPage() {
                   </div>
                 )}
 
-                {/* Two small below */}
                 {subImages.length > 0 && (
                   <div className="mt-3 grid grid-cols-2 gap-3">
                     {subImages.map((src, i) => (
@@ -89,14 +87,12 @@ export default function PortfolioPage() {
                 )}
               </div>
 
-              {/* TEXT */}
               <div className="flex flex-col">
                 <div className="text-sm text-neutral-500">
                   {study.client} • {study.year}
                 </div>
                 <h2 className="mt-1 font-varela text-3xl md:text-4xl">{study.title}</h2>
 
-                {/* Services (pills) */}
                 {Array.isArray(study.services) && study.services.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-2">
                     {study.services.map((svc) => (
@@ -110,10 +106,8 @@ export default function PortfolioPage() {
                   </div>
                 )}
 
-                {/* Summary */}
                 <p className="mt-4 text-neutral-700">{study.summary}</p>
 
-                {/* Testimonial */}
                 {study.testimonial?.quote && (
                   <figure className="mt-6 rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                     <blockquote className="text-neutral-800 italic">
@@ -133,11 +127,10 @@ export default function PortfolioPage() {
       </div>
       </section>
 
-      {/* CALL TO ACTION */}
       <section className="my-24 text-center">
         <div className="inline-block rounded-2xl bg-gradient-to-r from-brand-red to-brand-orange p-[2px] shadow-lg">
           <a
-            href="/portfolio.pdf" // change this path to your actual PDF file
+            href="/portfolio.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl bg-white px-8 py-4 font-varela text-lg text-brand-red transition hover:bg-brand-red hover:text-white"
@@ -150,8 +143,6 @@ export default function PortfolioPage() {
         </p>
       </section>
 
-
-    {/* CLIENT LOGO BAND */}
     <section className="bg-neutral-50 py-10">
       <div className="container">
         <h2 className="text-center font-varela text-xl text-neutral-600 mb-6">
@@ -204,8 +195,6 @@ export default function PortfolioPage() {
       </div>
     </section>
 
-
-      {/* Lightbox */}
       <Lightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />
     </article>
   );

@@ -8,7 +8,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <article className="bg-white">
-      {/* ===== Header (same style as Portfolio) ===== */}
+
       <section className="bg-gradient-to-t from-sky-950 to-indigo-950 text-white">
         <div className="container py-14 md:py-20">
           <h1 className="text-center font-varela text-4xl md:text-6xl">Contact</h1>
@@ -18,7 +18,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ===== Content ===== */}
       <section>
         <div className="container py-12 md:py-16">
           <div className="grid gap-10 md:grid-cols-2">
@@ -73,7 +72,6 @@ export default function ContactPage() {
                 </dl>
               </div>
 
-              {/* Optional: direct email CTA */}
               <a
                 href="mailto:daena@denehoni.com?subject=New%20Project%20Inquiry"
                 className="inline-block rounded-2xl bg-gradient-to-r from-brand-red to-brand-orange px-6 py-3 font-varela text-white shadow transition hover:opacity-90"
@@ -82,19 +80,12 @@ export default function ContactPage() {
               </a>
             </div>
 
-            {/* Right: Form */}
             <div className="rounded-2xl border border-neutral-200 p-[1px] bg-gradient-to-r from-brand-red/40 to-brand-orange/40">
               <div className="rounded-2xl bg-white p-6 md:p-8">
                 <h2 className="font-varela text-2xl md:text-3xl">Contact Form</h2>
                 <p className="mt-2 text-neutral-600">
                   We’ll get back to you as soon as possible.
                 </p>
-
-                {/* 
-                  ACTION NOTE:
-                  - Replace action with your handler (e.g., /api/contact) or a form service.
-                  - For now, it’s just a placeholder.
-                */}
                 <form
                   action="https://formspree.io/f/myznndvd"
                   method="POST"
@@ -150,7 +141,6 @@ export default function ContactPage() {
                   </button>
                 </form>
 
-                {/* small privacy note */}
                 <p className="mt-4 text-xs text-neutral-500">
                   By submitting this form, you consent to us contacting you about your inquiry.
                 </p>

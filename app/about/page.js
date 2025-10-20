@@ -10,17 +10,14 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <article className="bg-white">
-      {/* ===== Header + Vision/Mission share one background (like Services) ===== */}
       <section
         className="relative overflow-hidden bg-top bg-cover text-white"
         style={{
           backgroundImage: "url('/services-bg.jpg')",
         }}
       >
-        {/* brand gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-sky-950/85 via-indigo-950/70 to-indigo-900/40" />
 
-        {/* Header */}
         <div className="relative container py-16 md:py-24 text-center">
           <h1 className="font-varela text-4xl md:text-6xl">About Dene Honi</h1>
           <p className="font-varela mx-auto mt-6 max-w-3xl text-xl text-white/90">
@@ -28,7 +25,6 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Vision / Mission — equal height, same background continues */}
         <div className="relative container pb-16 md:pb-24">
           <div className="grid gap-8 md:grid-cols-2 auto-rows-fr">
             {/* Vision */}
@@ -41,7 +37,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Mission */}
             <div className="rounded-2xl p-[1px] shadow-xl h-full">
               <div className="flex h-full flex-col rounded-2xl bg-brand-orange/70 p-8">
                 <h2 className="font-varela text-2xl md:text-3xl">Our Mission</h2>
@@ -57,7 +52,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ===== What We Believe (unchanged) ===== */}
       <section className="bg-neutral-50">
         <div className="container py-16 md:py-24">
           <h2 className="text-center font-varela text-3xl md:text-5xl">
@@ -72,7 +66,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ===== Our Values (unchanged) ===== */}
       <section className="border-t border-neutral-200">
         <div className="container py-16 md:py-24">
           <h2 className="text-center font-varela text-3xl md:text-5xl">
@@ -117,7 +110,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ===== Our Story (unchanged) ===== */}
       <section className="bg-white">
         <div className="container py-16 md:py-24">
           <h2 className="text-center font-varela text-3xl md:text-5xl">
@@ -154,7 +146,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ===== Founders (unchanged) ===== */}
       <section className="bg-neutral-50">
         <div className="container py-16 md:py-24">
           <h2 className="text-center font-varela text-3xl md:text-5xl">
@@ -167,7 +158,6 @@ export default function AboutPage() {
           </p>
 
           <div className="mt-12 grid gap-10 md:grid-cols-2">
-            {/* Ryan */}
             <div className="rounded-2xl border border-neutral-200 p-6">
               <div className="flex items-center gap-4">
                 <div className="relative h-20 w-20 overflow-hidden rounded-xl bg-neutral-200">
@@ -188,8 +178,6 @@ export default function AboutPage() {
                  I'm a proud member of the Chipewyan Prairie Dene First Nation and Treaty 8 territory. I've been working as a graphic designer and web developer for over 20 years, supporting Indigenous organizations and First Nation communities across Canada and the U.S. My work is deeply connected to Dene culture and the land I come from. I believe that technology, when used with intention, can be a powerful way to preserve our knowledge systems, share our stories, and strengthen community connections.
               </p>
             </div>
-
-            {/* Daena */}
             <div className="rounded-2xl border border-neutral-200 p-6">
               <div className="flex items-center gap-4">
                 <div className="relative h-20 w-20 overflow-hidden rounded-xl bg-neutral-200">
