@@ -191,6 +191,12 @@ export default function PortfolioPage() {
             width={120}
             height={50}
           />
+          <Image
+            src="/clients/homefire.png"
+            alt="Homefire Consulting Ltd."
+            width={120}
+            height={50}
+          />
         </div>
       </div>
     </section>
