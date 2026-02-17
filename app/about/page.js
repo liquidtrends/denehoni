@@ -195,7 +195,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="mt-4 text-neutral-700 leading-relaxed">
-                I’m a white settler, born in Toronto, with ancestral roots in England, Germany, Poland, and Austria. For more than 15 years, I’ve worked alongside Indigenous communities and nonprofit organizations across Canada in research, communications, and project management roles. I have a PhD in Sociology and a deep commitment to creating relational, respectful, and culturally grounded spaces for collaboration. My work is guided by the belief that every story deserves to be told with integrity – and that we can build more just systems when we work together with humility and care.
+                I was born in Toronto and have ancestral roots in Europe. For more than 15 years, I’ve worked alongside Indigenous communities and nonprofit organizations across Canada in research, communications, and project management roles. I have a PhD in Sociology and a deep commitment to creating relational, respectful, and culturally grounded spaces for collaboration. My work is guided by the belief that every story deserves to be told with integrity – and that we can build more just systems when we work together with humility and care.
 
               </p>
             </div>
