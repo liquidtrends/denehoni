@@ -26,7 +26,7 @@ export default function AboutPage() {
             Subscribe for new project showcases, behind-the-scenes process, and community spotlights
           </p>
           <MailChimp/>
-          <p className="pt-10 text-xs opacity-50">Your inbox is sacred. No spam, no nonsense, ever. We’ll only send the occasional community-first update (new work, client highlights, and a few cool organizations we think you’ll love). <br />Unsubscribe anytime.</p>
+          <p className="pt-10 text-xs opacity-50">Your inbox is sacred. No spam, no nonsense, ever. We’ll only send the occasional update (new work, client highlights, and a few cool organizations we think you’ll love). <br />Unsubscribe anytime.</p>
         </div>
       </section>
     </article>
