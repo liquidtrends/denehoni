@@ -21,7 +21,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-sky-950/85 via-indigo-950/70 to-indigo-900/40" />
 
         <div className="relative container py-16 md:py-24 text-center md:w-1/3 w-full">
-          <h1 className="font-varela text-4xl md:text-6xl font-bold">Be Apart of Our Story</h1>
+          <h1 className="font-varela text-4xl md:text-6xl font-bold">Be a Part of Our Story</h1>
           <p className="font-varela mx-auto mt-6 max-w-3xl text-xl text-white/90">
             Subscribe for new project showcases, behind-the-scenes process, and community spotlights
           </p>
