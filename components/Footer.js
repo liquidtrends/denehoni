@@ -54,7 +54,7 @@ export default function Footer() {
               aria-label="Dene Honi on LinkedIn"
               className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white/80 hover:bg-white/10 hover:text-white transition"
             >
-                <FontAwesomeIcon icon={faLinkedinIn} className="h-10 w-10" />
+                <FontAwesomeIcon icon={faLinkedinIn} className="h-5 w-5" />
               </a>
             </div>
           </div>
